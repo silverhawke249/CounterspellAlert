@@ -1,7 +1,7 @@
 # CounterspellAlert
 A simple add-on that announces when you are afflicted by a counterspell/crowd control effect.
 
-![Preview of addon in action.](https://silverhawke.s-ul.eu/z9tHoYPH)
+(Sample image coming soon)
 
 ## Installing
 Downloading from CurseForge is recommended.
