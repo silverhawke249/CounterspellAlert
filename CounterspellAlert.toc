@@ -1,0 +1,13 @@
+## Interface: 11304
+## Title: CounterspellAlert
+## Author: Silverhawke
+## Notes: Announces when you get counterspelled (and CCed!)
+## Version: 1.0.0
+## SavedVariables: CsAlert_GlobalSettings
+## SavedVariablesPerCharacter: CsAlert_CharaSettings
+
+Helpers.lua
+SpellDB.lua
+Strings.lua
+Options.lua
+Main.lua
