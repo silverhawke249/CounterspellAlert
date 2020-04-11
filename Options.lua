@@ -84,7 +84,7 @@ local prevText = CsAlert.func.createHeader(CsAlert.strings.charaSettings, option
 -- Min debuff duration text
 text = optionsFrame:CreateFontString(nil, "ARTWORK")
 text:SetFontObject(GameFontNormalSmall)
-text:SetText(CsAlert.strings.minDebuffDuration)
+text:SetText(CsAlert.strings.minDebuffDuration .. ":")
 text:SetPoint("TOPLEFT", prevText, "BOTTOMLEFT", 0, -32)
 local textMinDebuffDurationLength = text:GetStringWidth()
 
@@ -128,7 +128,7 @@ optionsFrame.editMinDebuffDuration = editBox
 -- Types of debuff to announce
 text = optionsFrame:CreateFontString(nil, "ARTWORK")
 text:SetFontObject(GameFontNormalSmall)
-text:SetText(CsAlert.strings.debuffTypeText)
+text:SetText(CsAlert.strings.debuffTypeText .. ":")
 text:SetPoint("TOPLEFT", editBox, "BOTTOMLEFT", -(10 + textMinDebuffDurationLength), -20)
 
 optionsFrame.checkDebuffTypes = {}

@@ -13,9 +13,9 @@ strings.enUS = {
     showAllDebuff       = "Show all debuffs",
     showAllDebuffDesc   = "Includes spells out of the spell database, and ignores the minimum debuff " ..
                           "duration setting.",
-    minDebuffDuration   = "Minimum debuff duration to announce:",
+    minDebuffDuration   = "Minimum debuff duration to announce",
     seconds             = "sec(s)",
-    debuffTypeText      = "Types of debuff to announce:",
+    debuffTypeText      = "Types of debuff to announce",
     broadcastSettings   = "Broadcast settings",
     statuses = {
         counterspell    = "Counterspelled",
@@ -27,9 +27,9 @@ strings.enUS = {
         incapacitate    = "Incapacitated",
         mindcontrol     = "Mind Controlled",
         polymorph       = "Polymorphed",
+        root            = "Rooted",
         silence         = "Silenced",
-        stun            = "Stunned",
-        rooted          = "Rooted"
+        stun            = "Stunned"
     },
     instanceTypes = {
         party           = "Party",
