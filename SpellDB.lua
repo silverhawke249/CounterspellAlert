@@ -98,7 +98,7 @@ spellIds.polymorph = {
 }
 
 -- Spells that root the target
-spellIds.rooted = {
+spellIds.root = {
     10852,  -- "Battle Net",
     113,    -- "Chains of Ice",
     5424,   -- "Claw Grasp",
