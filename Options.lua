@@ -22,7 +22,7 @@ function optionsFrame.default()
         globalSettings = CsAlert.func.deepCopy(CsAlert.globalSettings),
         charaSettings = CsAlert.func.deepCopy(CsAlert.charaSettings)
     }
-    CsAlert.func.updateOptions(unpack(optionsFrame.settingChanges))
+    CsAlert.func.updateOptions(optionsFrame.settingChanges.globalSettings, optionsFrame.settingChanges.charaSettings)
 end
 CsAlert.optionsFrame = optionsFrame
 InterfaceOptions_AddCategory(optionsFrame)
