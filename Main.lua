@@ -19,7 +19,7 @@ CsAlert.charaSettings = {
         polymorph=true,
         silence=true,
         stun=true,
-        rooted=false
+        root=false
     },
     broadcastSettings = {
         party="SAY",
