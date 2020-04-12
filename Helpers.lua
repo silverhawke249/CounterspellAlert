@@ -142,11 +142,12 @@ function CsAlert.func.updateOptions(globalSet, charaSet)
     CsAlert.optionsFrame.editMinDebuffDuration:SetNumber(charaSet.minDebuffDuration)
     CsAlert.optionsFrame.editMinDebuffDuration:SetCursorPosition(0)
     charaSet.shownDebuffType = charaSet.shownDebuffType or CsAlert.charaSettings.shownDebuffType
-    for k, v in pairs(charaSet.shownDebuffType) do
-        CsAlert.optionsFrame.checkDebuffTypes[k]:SetChecked(v)
+    for key, checkbox in pairs(CsAlert.optionsFrame.checkDebuffTypes) do
+		checkbox:SetChecked(charaSet.shownDebuffType[key])
     end
     charaSet.broadcastSettings = charaSet.broadcastSettings or CsAlert.charaSettings.broadcastSettings
-    for k, v in pairs(charaSet.broadcastSettings) do
-        UIDropDownMenu_SetText(CsAlert.optionsFrame.dropDownBroadcast[k], CsAlert.strings.broadcastTargets[v])
+    for key, dropdown in pairs(CsAlert.optionsFrame.dropDownBroadcast) do
+		local v = charaSet.broadcastSettings[key]
+        UIDropDownMenu_SetText(dropdown, CsAlert.strings.broadcastTargets[v])
     end
 end
