@@ -17,9 +17,9 @@ CsAlert.charaSettings = {
         incapacitate=true,
         mindcontrol=true,
         polymorph=true,
+        root=false,
         silence=true,
-        stun=true,
-        root=false
+        stun=true
     },
     broadcastSettings = {
         party="SAY",
@@ -145,8 +145,13 @@ end
 
 function CsAlert.onEvent.ADDON_LOADED(self, addonName)
     if addonName == 'CounterspellAlert' then
-        CsAlert_GlobalSettings = CsAlert_GlobalSettings or CsAlert.func.deepCopy(CsAlert.globalSettings)
-        CsAlert_CharaSettings = CsAlert_CharaSettings or CsAlert.func.deepCopy(CsAlert.charaSettings)
+        local globalSettings, charaSettings
+        globalSettings = CsAlert.func.filterTable(CsAlert_GlobalSettings, CsAlert.globalSettings)
+        charaSettings = CsAlert.func.filterTable(CsAlert_CharaSettings, CsAlert.charaSettings)
+        CsAlert_GlobalSettings = CsAlert.func.deepCopy(CsAlert.globalSettings)
+        CsAlert_CharaSettings = CsAlert.func.deepCopy(CsAlert.charaSettings)
+        CsAlert.func.updateTable(CsAlert_GlobalSettings, globalSettings)
+        CsAlert.func.updateTable(CsAlert_CharaSettings, charaSettings)
 
         CsAlert.func.updateOptions(CsAlert_GlobalSettings, CsAlert_CharaSettings)
 
