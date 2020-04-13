@@ -108,6 +108,23 @@ function CsAlert.func.updateTable(t1, t2, onlyNilValues)
     end
 end
 
+-- Drops entries in t1 if the key doesn't exist in t2
+-- Returns a copy -- doesn't modify in-place
+-- Also filters recursively!
+function CsAlert.func.filterTable(t1, t2)
+    local t = {}
+    for k, v in pairs(t1) do
+        if t2[k] ~= nil then
+            if type(v) == "table" then
+                t[k] = CsAlert.func.filterTable(v, t2[k])
+            else
+                t[k] = v
+            end
+        end
+    end
+    return t
+end
+
 -- Prints a table to default chat frame
 function CsAlert.func.dumpTable(t, l)
     local indent = ""
