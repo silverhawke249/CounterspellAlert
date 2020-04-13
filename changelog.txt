@@ -1,2 +1,6 @@
+v1.0.1:
+- Better handling of saved settings.
+- Restoring to default settings no longer cause an error.
+
 v1.0.0:
 - Initial release.

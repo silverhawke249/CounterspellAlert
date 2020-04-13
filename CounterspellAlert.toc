@@ -2,7 +2,7 @@
 ## Title: CounterspellAlert
 ## Author: Silverhawke
 ## Notes: Announces when you get counterspelled (and CCed!)
-## Version: 1.0.0
+## Version: 1.0.1
 ## SavedVariables: CsAlert_GlobalSettings
 ## SavedVariablesPerCharacter: CsAlert_CharaSettings
 
