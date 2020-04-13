@@ -195,7 +195,6 @@ for instanceType, instanceString in pairs(CsAlert.strings.instanceTypes) do
     local dropDown = CreateFrame("Frame", "CsAlertDropDown"..instanceType, optionsFrame, "UIDropDownMenuTemplate")
     dropDown:SetPoint("TOPLEFT", text, "BOTTOMLEFT", -20, -5)
     dropDown.settingName = instanceType
-    UIDropDownMenu_SetText(dropDown, "Disabled")
     UIDropDownMenu_SetWidth(dropDown, 120)
     UIDropDownMenu_Initialize(dropDown, function(frame, level, menuList)
         local info = UIDropDownMenu_CreateInfo()
