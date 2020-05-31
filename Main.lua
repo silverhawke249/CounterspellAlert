@@ -27,6 +27,8 @@ CsAlert.charaSettings = {
         pvp="YELL"
     }
 }
+CsAlert_GlobalSettings = CsAlert_GlobalSettings or {}
+CsAlert_CharaSettings = CsAlert_CharaSettings or {}
 
 -- EVENT HANDLERS --
 function CsAlert.handler(self, event, ...)
